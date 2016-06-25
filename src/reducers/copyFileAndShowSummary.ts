@@ -26,13 +26,13 @@ const copyFileAndShowSummary = (state: AppState = initialState, action: any) => 
                 text: copy_action.contents
             })
         
-        case 'REJECT_FILE':
+        case types.REJECT_FILE:
             let reject_action: RejectFile = action;
             return ES6.Object.assign({}, state, {
                 fileNameOrErrorMessage: reject_action.errorMessage
             })
         
-        case 'SHOW_TEXT_SUMMARY':
+        case types.SHOW_TEXT_SUMMARY:
             let summarize_action: ShowTextSummary = action;
             let line_number = summarize_action.text.split('\n').length;
             if (summarize_action.text === "") {
