@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "sourceMap": true,
+        "declaration": true,
+        "module": "commonjs",
+        "jsx": "react",
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": true,
+        "experimentalDecorators": true
+    },
+    "compileOnSave": false,
+    "filesGlob": [
+        "./typings/index.d.ts",
+        "./src/*.tsx",
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
+    ],
+    "files": [
+        "./typings/index.d.ts",
+        "./src/index.tsx",
+        "./src/actions/creaters.ts",
+        "./src/actions/types.ts",
+        "./src/containers/FileDropzoneContainer.ts",
+        "./src/containers/SummaryContainer.ts",
+        "./src/containers/TextAreaContainer.ts",
+        "./src/models/ActionBase.ts",
+        "./src/models/AppState.ts",
+        "./src/models/CopyFileContentsAction.ts",
+        "./src/models/RejectFileAction.ts",
+        "./src/models/ShowTextSummaryAction.ts",
+        "./src/reducers/appReducers.ts",
+        "./src/reducers/copyFileAndShowSummary.ts",
+        "./src/components/App.tsx",
+        "./src/components/FileDropzone.tsx",
+        "./src/components/Summary.tsx",
+        "./src/components/TextArea.tsx"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
